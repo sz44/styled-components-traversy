@@ -1,13 +1,12 @@
 import { StyledHeader, StyledLogo, StyledNav, StyledImage  } from "./styles/Header.styled";
 import { StyledButton } from "./styles/Button.styled"
-import { Container } from "./styles/Container.styled";
+import { StyledContainer } from "./styles/Container.styled";
 import { StyledFlex } from "./styles/Flex.styled"
-
 
 export default function Header() {
   return (
     <StyledHeader>
-      <Container>
+      <StyledContainer>
         <StyledNav>
           <StyledLogo src='./images/logo.svg' alt='' />
           <StyledButton>Try It Free</StyledButton>
@@ -22,15 +21,13 @@ export default function Header() {
               but so does your audience. Create connections with your users as
               you engage in genuine discussion.
             </p>
-
             <StyledButton bg='#ff0099' color='#fff'>
               Get started for free
             </StyledButton>
           </div>
-
           <StyledImage src="./images/illustration-mockups.svg" alt="" />
         </StyledFlex>
-      </Container>
+      </StyledContainer>
     </StyledHeader>
   );
 }
